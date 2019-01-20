@@ -1,3 +1,8 @@
+// Date   :2019-01-20
+/**
+ * @param {number} x
+ * @return {number}
+ */
 var reverse = function(x) {
     var y=0;
     var min = -Math.pow(2,31);
