@@ -1,3 +1,9 @@
+// Date   :2019-01-20
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
 Approach 1: Brute Force
 var twoSum = function (nums, target) {
     var a = [0, 0];
