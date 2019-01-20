@@ -1,0 +1,8 @@
+// Date   : 2019-01-21
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+var isPalindrome = function(x) {
+    
+};
