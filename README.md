@@ -2,7 +2,7 @@
 ## Algorithms
 
 | 题号 | 语言 | 完成 |
-| :------:| :------: | :------: |
+| :------| :------: | :------: |
 | 1. Two Sum | <a href="./Algorithms/Easy/1. Two Sum.html">JavaScript</a> | Complete |
 | 7. Reverse Integer | <a href="./Algorithms/Easy/7. Reverse Integer.html">JavaScript</a> | Complete |
 | 9. Palindrome Number | JavaScript | Complete |
