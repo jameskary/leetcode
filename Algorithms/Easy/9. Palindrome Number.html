@@ -1,49 +1,75 @@
-Determine whether an integer is a palindrome.An integer is a palindrome when it reads the same backward as forward.
+<!DOCTYPE html>
+<html lang="en">
 
-  Example 1:
-Input: 121
-Output: true
-  
-  Example 2:
-Input: -121
-Output: false
-Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
-  
-  Example 3:
-Input: 10
-Output: false
-Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>9. Palindrome Number</title>
+</head>
 
-// Date   : 2019-01-21
-/**
- * @param {number} x
- * @return {boolean}
- */
-var isPalindrome = function(x) {
-    if (x < 0) { // 负数情况
-        return false;
-    } else if (x >= 0 && x < 10) { [0,9]之间
-        return true;
-    } else {
-        var y = x, a = [0, 0], times = 0; // 初始化
-        for (var i = 0; y > 0; i++) { // 放入数组
-            a[i] = y % 10;
-            y = Math.floor(y / 10);
-        }
-        if (a.length % 2 == 0) { // 分奇偶数赋值
-            half = a.length / 2; 
-        } else {
-            half = (a.length - 1) / 2;
-        }
-        for (var i = 0, j = a.length - 1; i < half; i++ , j--) { // 
-            if (a[i] == a[j]) { 
-                times++;
+<body>
+    Determine whether an integer is a palindrome.
+    An integer is a palindrome when it reads the same backward as forward.
+
+    Example 1:
+    Input: 121
+    Output: true
+
+    Example 2:
+    Input: -121
+    Output: false
+    Explanation: From left to right, it reads -121. From right to left, it becomes 121-. 
+    Therefore it is not a palindrome.
+
+    Example 3:
+    Input: 10
+    Output: false
+    Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+    <script>
+        // Date : 2019-01-21
+        /**
+        * @param {number} x
+        * @return {boolean}
+        */
+        var isPalindrome = function (x) {
+            if (x < 0) { // 负数情况
+                // console.log("false");
+                return false;
+            } else if (x >= 0 && x < 10) { //[0,9]之间 
+                // console.log("true");
+                return true;
+            } else {
+                var y = x, a = [0, 0], times = 0;// 初始化
+                for (var i = 0; y > 0; i++) { // 放入数组
+                    a[i] = y % 10;
+                    y = Math.floor(y / 10);
+                }
+                if (a.length % 2 == 0) { // 分奇偶数赋值
+                    half = a.length / 2;
+                } else {
+                    half = (a.length - 1) / 2;
+                }
+                for (var i = 0, j = a.length - 1; i < half; i++ , j--) {
+                    if (a[i] == a[j]) {
+                        times++;
+                    }
+                } if (times == half) { // 相同数值对==half
+                    // console.log("true");
+                    return true;
+                } else {
+                    // console.log("false");
+                    return false;
+                }
             }
-        }
-        if (times == half) { // 相同数值对==一半
-            return true;
-        } else {
-            return false;
-        }
-    }
-};
+        };
+        // isPalindrome(-123); // false
+        // isPalindrome(0); // true
+        // isPalindrome(9); // true
+        // isPalindrome(121); // true
+        // isPalindrome(1221); // true
+        // isPalindrome(1224); // false
+    </script>
+</body>
+
+</html>
