@@ -1,28 +1,57 @@
-// Date   :2019-01-20
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
-Approach 1: Brute Force
-var twoSum = function (nums, target) {
-    var a = [0, 0];
-    for (var i = 0, len = nums.length; i < len; i++) {
-        for (var j = i + 1; j < len; j++) {
-            if (nums[i] + nums[j] == target) {
-                a[0] = i;
-                a[1] = j;
-                return a;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1. Two sum</title>
+</head>
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+Example:
+    Given nums = [2, 7, 11, 15], target = 9,
+    Because nums[0] + nums[1] = 2 + 7 = 9,return [0, 1].
+    
+<body>
+    <script>
+        // Date   :2019-01-20
+        /**
+         * @param {number[]} nums
+         * @param {number} target
+         * @return {number[]}
+         */
+        // Approach 1: Brute Force        
+        // var twoSum = function (nums, target) {
+        //     var a = [0, 0];
+        //     for (var i = 0, len = nums.length; i < len; i++) {
+        //         for (var j = i + 1; j < len; j++) {
+        //             if (nums[i] + nums[j] == target) {
+        //                 a[0] = i;
+        //                 a[1] = j;
+        //                 alert(a);
+        //                 return a;
+        //             }
+        //         }
+        //     }
+        // };
+        // Approach 2: Undefined
+        var twoSum = function (nums, target) {
+            var a = [];
+            for (var i = 0, len = nums.length; i < len; i++) {
+                var tmp = target - nums[i];
+                if (a[tmp] !== undefined) {
+                    // console.log(a[tmp], i);
+                    return [a[tmp], i];
+                }
+                a[nums[i]] = i;
             }
-        }
-    }
-};
-Approach 2: Undefined
-var twoSum = function (nums, target) {
-    var a = [];
-    for (var i = 0, len = nums.length; i < len; i++) {
-        var tmp = target - nums[i];
-        if (a[tmp] !== undefined) return [a[tmp], i];
-        a[nums[i]] = i;
-    }
-};
+        };
+        // twoSum([2, 7, 11, 15], 9); // (0,1)
+        // twoSum([3,6,3], 6); // (0,2)
+    </script>
+</body>
+
+</html>
