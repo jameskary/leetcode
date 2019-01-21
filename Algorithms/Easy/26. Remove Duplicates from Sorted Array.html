@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>26. Remove Duplicates from Sorted Array</title>
+</head>
+
+<body>
+    <script>
+        /**
+         * @date 2019-01-21
+         * @author JamesWalton
+         * 
+         * @param {number[]} nums
+         * @return {number}
+         */
+        var removeDuplicates = function (nums) {
+            var len = 1;
+            for (var i = 0; i < nums.length; i++) {
+                if (nums[i] < nums[i + 1]) { // 当前项小于后一项时，长度+1
+                    len++;
+                } else if (nums[i] == nums[i + 1]) { // 当前项等于后一项时，删去当前项
+                    nums.splice([i], 1);
+                    i--;
+                }
+            }
+            return len;
+        };
+
+        // 测试案例
+        // var nums = [1, 1, 2];
+        // var nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+        // removeDuplicates(nums);
+    </script>
+</body>
+
+</html>
