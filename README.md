@@ -10,7 +10,7 @@
 | 14. Longest Common Prefix |  |  |
 | 20. Valid Parentheses |  |  |
 | 21. Merge Two Sorted Lists |  |  |
-| <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">26. Remove Duplicates from Sorted Array</a> | <a href="./Algorithms/Easy/26. Remove Duplicates from Sorted Array">JavaScript</a> | Complete |
+| <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">26. Remove Duplicates from Sorted Array</a> | <a href="./Algorithms/Easy/26. Remove Duplicates from Sorted Array.html">JavaScript</a> | Complete |
 | <a href="https://leetcode.com/problems/remove-element/">27. Remove Element</a> | <a href="./Algorithms/Easy/27. Remove Element.html">JavaScript</a> | Complete |
 | 28. Implement strStr() |  |  |
 | 35. Search Insert Position |  |  |
