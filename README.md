@@ -5,7 +5,7 @@
 | :------| :------: | :------: |
 | <a href="https://leetcode.com/problems/two-sum">1. Two Sum</a> | <a href="./Algorithms/Easy/1. Two Sum.html">JavaScript</a> | Complete |
 | <a href="https://leetcode.com/problems/reverse-integer/">7. Reverse Integer</a> | <a href="./Algorithms/Easy/7. Reverse Integer.html">JavaScript</a> | Complete |
-| <a href="https://leetcode.com/problems/palindrome-number/">9. Palindrome Number</a> | <a href="./Algorithms/Easy/9. Palindrome Number">JavaScript</a> | Complete |
+| <a href="https://leetcode.com/problems/palindrome-number/">9. Palindrome Number</a> | <a href="./Algorithms/Easy/9. Palindrome Number.html">JavaScript</a> | Complete |
 | 13. Roman to Integer |  |  |
 | 14. Longest Common Prefix |  |  |
 | 20. Valid Parentheses |  |  |
