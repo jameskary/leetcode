@@ -6,7 +6,7 @@
 | <a href="https://leetcode.com/problems/two-sum">1. Two Sum</a> | <a href="./Algorithms/Easy/1. Two Sum.html">JavaScript</a> | Complete |
 | <a href="https://leetcode.com/problems/reverse-integer/">7. Reverse Integer</a> | <a href="./Algorithms/Easy/7. Reverse Integer.html">JavaScript</a> | Complete |
 | <a href="https://leetcode.com/problems/palindrome-number/">9. Palindrome Number</a> | <a href="./Algorithms/Easy/9. Palindrome Number.html">JavaScript</a> | Complete |
-| 13. Roman to Integer |  |  |
+| <a href="https://leetcode.com/problems/roman-to-integer/">13. Roman to Integer</a> | <a href="./Algorithms/Easy/13. Roman to Integer.html">JavaScript</a> | Complete |
 | 14. Longest Common Prefix |  |  |
 | 20. Valid Parentheses |  |  |
 | 21. Merge Two Sorted Lists |  |  |
@@ -17,8 +17,8 @@
 | 38. Count and Say |  |  |
 | 53. Maximum Subarray |  |  |
 | 58. Length of Last Word |  |  |
-| 66. Plus One |  |  |
-| 67. Add Binary |  |  |
+| <a href="https://leetcode.com/problems/plus-one/add-binary/">66. Plus One</a> | <a href="./Algorithms/Easy/66. Plus One.html">JavaScript</a> | Complete |
+| <a href="https://leetcode.com/problems/add-binary/">67. Add Binary</a> | <a href="./Algorithms/Easy/67. Add Binary.html">JavaScript</a> |  |
 | 69. Sqrt(x) |  |  |
 | 70. Climbing Stairs |  |  |
 | 83. Remove Duplicates from Sorted List |  |  |

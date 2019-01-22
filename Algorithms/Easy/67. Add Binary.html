@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>67. Add Binary</title>
+</head>
+
+<body>
+    <script>
+        /**
+         * @date 2019-01-23
+         * 
+         * @param {string} a
+         * @param {string} b
+         * @return {string}
+         */
+        var addBinary = function (a, b) {
+            a = a.split('').reverse();
+            b = b.split('').reverse();
+            // if (a == "0" && b == "0") {
+            //     result = "0";
+            //     console.log(result);
+            // }
+            // // 字符串转换为十进制数值
+            // var num_1 = parseInt(a, 2); // 3
+            // var num_2 = parseInt(b, 2); // 1
+            // // 两数相加
+            // var sum = num_1 + num_2; // 4
+            // var result = "";
+            // var a = [];
+            // // 放入数组
+            // for (var i = 0; sum > 0; i++) {
+            //     var temp = sum % 2; // 0
+            //     // console.log("sum-before == " + sum); // 4 2 1
+            //     sum = Math.floor(sum / 2);
+            //     a[i] = temp;
+            //     // console.log(temp);
+            //     // console.log("sum-after == " + sum); // 0
+            //     if (temp == 1) {
+            //         result = result + "1";
+            //     } else {
+            //         result = result + "0";
+            //     }
+            // }
+            // a.reverse();
+            // // result = "0";
+            // for (var i = 0; i < a.length; i++) {
+            //     if (a[i] == 1) {
+            //         result = result + "1";
+            //     } else {
+            //         result = result + "0";
+            //     }
+            // }
+
+            console.log(a);
+            console.log(b);
+            // console.log(a.length);
+            // console.log(result);
+            // console.log(num3);
+            // console.log(num4);
+            // console.log(sum);
+            // console.log(result);
+        };
+        // 测试案例
+        // var a = "11", b = "1";
+        var a = "1010", b = "1011";
+        // var a = "0", b = "0";
+        addBinary(a, b);
+    </script>
+</body>
+
+</html>
