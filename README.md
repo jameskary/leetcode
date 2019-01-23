@@ -13,7 +13,7 @@
 | <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">26. Remove Duplicates from Sorted Array</a> | <a href="./Algorithms/Easy/26. Remove Duplicates from Sorted Array.html">JavaScript</a> | Complete |
 | <a href="https://leetcode.com/problems/remove-element/">27. Remove Element</a> | <a href="./Algorithms/Easy/27. Remove Element.html">JavaScript</a> | Complete |
 | 28. Implement strStr() |  |  |
-| 35. Search Insert Position |  |  |
+| <a href="https://leetcode.com/problems/search-insert-position/">35. Search Insert Position</a> | <a href="./Algorithms/Easy/35. Search Insert Position.html">JavaScript</a> | Complete |
 | 38. Count and Say |  |  |
 | 53. Maximum Subarray |  |  |
 | 58. Length of Last Word |  |  |

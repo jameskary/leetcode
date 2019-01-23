@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>35. Search Insert Position</title>
+</head>
+
+<body>
+    <script>
+        // Date :2019-01-23
+        /**
+        * @param {number[]} nums
+        * @param {number} target
+        * @return {number}
+        */
+
+        // 调试版
+        var searchInsert = function (nums, target) {
+            if (target > nums[nums.length - 1]) console.log(nums.length); // 大于最后一项返回长度
+            if (target < nums[0]) console.log(0); // 小于第一项返回0
+            for (var i = 0, j = 1; i < nums.length; i++ , j++) {
+                if (nums[i] == target) console.log(i); // 相等时即为找到，返回索引
+                var before = nums[i];
+                var after = nums[j];
+                console.log("before" + before);
+                console.log("after" + after);
+                if (target > before && target < after) return j;
+            }
+        };
+
+        // 提交版
+        var searchInsert = function (nums, target) {
+            if (target > nums[nums.length - 1]) return nums.length;
+            if (target < nums[0]) return 0;
+            for (var i = 0, j = 1; i < nums.length; i++ , j++) {
+                if (nums[i] == target) return i;
+                var before = nums[i];
+                var after = nums[j];
+                if (target > before && target < after) return j;
+            }
+        };
+
+        // 测试案例
+        // searchInsert([1, 3, 5, 6], 5); // 2 找到并输出索引
+        // searchInsert([1, 3, 5, 6], 7); // 4 应放置在数组后面
+        // searchInsert([1, 3, 5, 6], 0); // 0 应放置在数组前面
+        // searchInsert([1, 3, 5, 6], 4); // 1 应放置在数组中间
+
+    </script>
+</body>
+
+</html>
